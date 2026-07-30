@@ -1,5 +1,9 @@
 # Codex Enterprise
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://python.org)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688.svg)](https://fastapi.tiangolo.com)
+
 A framework for building enterprise applications. Trying to make it easier to add AI capabilities to existing business systems.
 
 ## What's the goal
