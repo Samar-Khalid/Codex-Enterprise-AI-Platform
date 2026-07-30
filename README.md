@@ -1,30 +1,36 @@
-# Codex Enterprise
+# Codex Enterprise AI Platform
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://python.org)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688.svg)](https://fastapi.tiangolo.com)
+A framework for integrating AI capabilities into enterprise systems with a focus on data governance, master data management, and ERP integration.
 
-A framework for building enterprise applications. Trying to make it easier to add AI capabilities to existing business systems.
+## Motivation
 
-## What's the goal
+Enterprise applications share common patterns - authentication, data management, workflows, and reporting. Codex Enterprise AI Platform provides a reusable foundation for building AI-powered enterprise features, with a particular focus on manufacturing and ERP environments.
 
-Most enterprise apps are built the same way — auth, CRUD, workflows, reporting. Codex is my attempt to create a reusable foundation so I don't have to start from scratch every time.
+## Focus Areas
 
-Current focus:
-- FastAPI backend with auth
-- PostgreSQL for data
-- Redis for caching
-- AI integration (OpenAI)
+### Data Governance
+- Data quality monitoring and validation
+- Access control and audit logging
+- Data lineage tracking
 
-## Getting started
+### Master Data Management
+- Customer, product, and supplier data hubs
+- Data deduplication and matching
+- Hierarchical data structures
+
+### AI Integration
+- LLM-powered data querying
+- Automated report generation
+- Anomaly detection in operational data
+
+## Quick Start
 
 ```bash
-git clone https://github.com/Samar-Khalid/Codex-Enterprise.git
-cd Codex-Enterprise
+git clone https://github.com/Samar-Khalid/Codex-Enterprise-AI-Platform.git
+cd Codex-Enterprise-AI-Platform
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-cp .env.example .env
 ```
 
 Run with Docker:
@@ -33,27 +39,21 @@ Run with Docker:
 docker-compose up -d
 ```
 
-Or without:
-
-```bash
-uvicorn backend.api.main:app --reload
-```
-
 API docs at http://localhost:8000/docs
 
-## Structure
+## Repository Structure
 
 ```
 backend/
-├── core/       # Config, database
-├── api/        # FastAPI endpoints
-├── services/   # Business logic
-└── workers/    # Background tasks
+    core/       Configuration, database setup
+    api/        FastAPI endpoints
+    services/   Business logic
+    workers/    Background tasks
 ```
 
 ## Status
 
-Early stage. Auth works, basic CRUD works. Still building out the AI features and ERP connectors.
+Early-stage. Auth and basic CRUD operational. Data governance and AI features under active development.
 
 ## License
 
